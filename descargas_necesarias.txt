@@ -15,4 +15,4 @@ Cargas de trabajo:
 -Desarrollo de ASP.Net y web
 -Desarrollo de escritorio de .NET
 
-version 17.11.1 Community 2022 
+version 17.11.4 Community 2022 
