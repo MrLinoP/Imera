@@ -1,3 +1,11 @@
+#PARA NETBEANS
+
+versión 22
+JDK 22
+
+
+#PARA VS
+
 componentes individuales:
 -SDK de NET Framework 4.8.1
 -Paquete de compatibilidad 4.8.1
