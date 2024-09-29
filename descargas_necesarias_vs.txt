@@ -1,0 +1,10 @@
+componentes individuales:
+-SDK de NET Framework 4.8.1
+-Paquete de compatibilidad 4.8.1
+-Plantillas de proyecto y de elemento de .NET Framework
+
+Cargas de trabajo:
+-Desarrollo de ASP.Net y web
+-Desarrollo de escritorio de .NET
+
+version 17.11.1 Community 2022 
