@@ -4,11 +4,12 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.imera.config.DBManager;
 
-public abstract class DAOImpl {
+public abstract class DAOImpl<T> {
 
     protected String nombre_tabla;
     protected Connection conexion;
@@ -134,13 +135,79 @@ public abstract class DAOImpl {
         String sql = "update " + this.nombre_tabla;
         sql = sql.concat(" set ");
         sql = sql.concat(this.obtenerListaDeAtributosYValoresParaModificar());
-        sql = sql.concat(" where ");
-        sql = sql.concat(this.obtenerListaDeCondicionesParaModificar());
         return sql;
     }
 
     protected abstract String obtenerListaDeAtributosYValoresParaModificar();
+    
+    protected ArrayList<T> listarTodos() {
+        ArrayList<T> lista = new ArrayList<>();
+        T object;
+        try {
+            iniciarTransaccion();
+            String sql = generarSQLParaListarTodos();
+            ejecutarConsultaEnBD(sql);
+            while (resultset.next()) {
+                object = agregarObjetoALaLista();
+                lista.add(object);
+            }
+        } catch (SQLException ex) {
+            try {
+                rollbackTransaccion();
+            } catch (SQLException ex1) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex1);
+            }
+            Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                cerrarConexion();
+            } catch (SQLException ex) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return lista;
+    }
 
-    protected abstract String obtenerListaDeCondicionesParaModificar();
+    protected String generarSQLParaListarTodos() {
+        String sql = "select " + obtenerProyeccionParaSelect() + " from " + this.nombre_tabla;
+        return sql;
+    }
+    
+    protected abstract String obtenerProyeccionParaSelect();
+    
+    protected abstract T agregarObjetoALaLista();
+    
+    protected T obtenerPorId(int idComprobante) {
+        T objeto = null;
+        try {
+            iniciarTransaccion();
+            String sql = generarSQLParaObtenerPorId();  // Método para construir el SQL con WHERE
+            statement = conexion.prepareStatement(sql);
+            statement.setInt(1, idComprobante);  // Aquí se usa el ID para setear el valor en el PreparedStatement
+            resultset = statement.executeQuery();
 
+            if (resultset.next()) {
+                objeto = agregarObjetoALaLista();  // Extrae el objeto de ResultSet
+            }
+            comitarTransaccion();
+        } catch (SQLException ex) {
+            try {
+                rollbackTransaccion();
+            } catch (SQLException ex1) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex1);
+            }
+            Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                cerrarConexion();
+            } catch (SQLException ex) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return objeto;
+    }
+    
+    protected String generarSQLParaObtenerPorId() {
+        return "SELECT " + obtenerProyeccionParaSelect() + " FROM " + nombre_tabla + " WHERE idComprobante = ?";
+    }
 }
