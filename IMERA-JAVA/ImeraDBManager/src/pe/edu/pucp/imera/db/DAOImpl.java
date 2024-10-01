@@ -83,6 +83,30 @@ public abstract class DAOImpl {
         return resultado;
     }
     
+    public Integer modificar(){
+        Integer resultado = 0;
+        try {
+            this.iniciarTransaccion();
+            String sql = this.generarSQLParaModificacion();
+            resultado = this.ejecutarModificacionesEnBD(sql);
+            this.comitarTransaccion();
+        } catch (SQLException ex) {
+            try {
+                this.rollbackTransaccion();
+            } catch (SQLException ex1) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex1);
+            }
+            Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                this.cerrarConexion();
+            } catch (SQLException ex) {
+                Logger.getLogger(DAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return resultado;
+    }
+    
     private String generarSQLParaInsercion() {
         String sql = "insert into " + this.nombre_tabla;
         sql = sql.concat(" (");
@@ -105,5 +129,18 @@ public abstract class DAOImpl {
             resultado = this.resultset.getInt("id");
         return resultado;
     }
+
+    private String generarSQLParaModificacion() {
+        String sql = "update " + this.nombre_tabla;
+        sql = sql.concat(" set ");
+        sql = sql.concat(this.obtenerListaDeAtributosYValoresParaModificar());
+        sql = sql.concat(" where ");
+        sql = sql.concat(this.obtenerListaDeCondicionesParaModificar());
+        return sql;
+    }
+
+    protected abstract String obtenerListaDeAtributosYValoresParaModificar();
+
+    protected abstract String obtenerListaDeCondicionesParaModificar();
 
 }
