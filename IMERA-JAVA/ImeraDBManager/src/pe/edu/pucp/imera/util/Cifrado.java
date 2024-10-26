@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package pe.edu.pucp.imera.util;
 
 import java.io.UnsupportedEncodingException;
@@ -15,10 +19,10 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
  *
- * Autor: andres
+ * @author julia
  */
 public class Cifrado {
-
+    
     private static final String llave = "Programacion3PUCP";
 
     public static String cifrarMD5(String texto) {
@@ -40,7 +44,7 @@ public class Cifrado {
 
         } catch (UnsupportedEncodingException | InvalidKeyException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException ex) {
             System.out.println(ex.getMessage());
-        }
+}
         return base64EncryptedString;
     }
 
