@@ -1,7 +1,7 @@
 #PARA NETBEANS
 
 versión 22
-JDK 22
+JDK 21
 
 
 #PARA VS
