@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Imera.master.cs" Inherits="ImeraWA.Imera" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Fonts/css/all.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="Scripts/jquery-3.7.1.js"></script>
+
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <%-- BARRA SUPERIOR --%>
+   <div class="container-fluid d-flex p-0 h-90 top-bar">
+       
+            <div>
+                <a href="Home.aspx" class="navbar-brand">
+                    <img src="Images/logo.png" width="100" />
+                    <strong>IMERA PUCP</strong>
+                </a>
+            </div>
+            <div>User <img src="icon-user.png" alt="User" width="30"></div>
+   </div>
+    <%-- CONTENIDO --%>
+    <div class="container-fluid d-flex p-0 h-100">
+        <%-- Barra lateral --%>
+        <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-$blue-300 text-white offcanvas-md offcanvas-start">
+            <ul class="mynav nav nav-pills flex-column mb-auto">
+                <li class="nav-item mb-1">
+                    <a href="#"><i class="fa-solid fa-chalkboard-user"></i>Aulas libres</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#"><i class="fa-solid fa-school-flag"></i>Pabellones</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#"><i class="fa-solid fa-user-tie"></i>Auxiliares</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#"><i class="fa-solid fa-file-invoice"></i>Reportes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-light flex-fill overflow-auto">
+            <!-- Contenido de la Página Web -->
+            <form runat="server">
+    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+    </asp:ContentPlaceHolder>
+</form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\bin\ImeraWA.dll.config
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\bin\ImeraWA.dll
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\bin\ImeraWA.pdb
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\obj\Debug\ImeraWA.csproj.AssemblyReference.cache
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\obj\Debug\ImeraWA.csproj.CoreCompileInputs.cache
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\obj\Debug\ImeraWA.dll
+D:\PUCP\2024\CICLO 6\CURSOS\PROGRA 3\TA_PROG3_MrLino\repo\IMERA-CS\ImeraWA\ImeraWA\obj\Debug\ImeraWA.pdb
