@@ -3,5 +3,5 @@
     Progra3 - Home
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContenido" runat="server">
-    <h1>BIENVENIDOS A IMERA PUCP</h1>
+    <h2 class="ms-5 mt-4">BIENVENIDOS A IMERA PUCP</h2>
 </asp:Content>
