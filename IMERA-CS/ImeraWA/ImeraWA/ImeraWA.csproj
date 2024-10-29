@@ -105,6 +105,7 @@
     <Content Include="Content\MasEstilos.css" />
     <Content Include="Content\site.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\cia.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\placeholder.jpg" />
     <Content Include="Images\pucp.png" />

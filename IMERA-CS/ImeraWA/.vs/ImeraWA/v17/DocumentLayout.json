@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|d:\\pucp\\2024\\ciclo 6\\cursos\\progra 3\\ta_prog3_mrlino\\repo\\imera-cs\\imerawa\\imerawa\\imera.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|solutionrelative:imerawa\\imera.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\imerawa\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|solutionrelative:imerawa\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|d:\\pucp\\2024\\ciclo 6\\cursos\\progra 3\\ta_prog3_mrlino\\repo\\imera-cs\\imerawa\\imerawa\\content\\masestilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\imerawa\\content\\masestilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|solutionrelative:imerawa\\content\\masestilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|d:\\pucp\\2024\\ciclo 6\\cursos\\progra 3\\ta_prog3_mrlino\\repo\\imera-cs\\imerawa\\imerawa\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|d:\\pucp\\2024\\ciclo 6\\cursos\\progra 3\\ta_prog3_mrlino\\repo\\imera-cs\\imerawa\\imerawa\\imera.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|solutionrelative:imerawa\\imera.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\imerawa\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D8A1EDFE-A272-421E-B574-8AEFD88CBA61}|ImeraWA\\ImeraWA.csproj|solutionrelative:imerawa\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MasEstilos.css",
               "DocumentMoniker": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\ImeraWA\\Content\\MasEstilos.css",
               "RelativeDocumentMoniker": "ImeraWA\\Content\\MasEstilos.css",
               "ToolTip": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\ImeraWA\\Content\\MasEstilos.css",
               "RelativeToolTip": "ImeraWA\\Content\\MasEstilos.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwCkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-28T04:22:17.491Z",
               "EditorCaption": ""
@@ -49,14 +49,14 @@
               "RelativeDocumentMoniker": "ImeraWA\\Content\\site.css",
               "ToolTip": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\ImeraWA\\Content\\site.css",
               "RelativeToolTip": "ImeraWA\\Content\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-28T03:54:25.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Home.aspx",
               "DocumentMoniker": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\ImeraWA\\Home.aspx",
               "RelativeDocumentMoniker": "ImeraWA\\Home.aspx",
@@ -69,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Imera.Master",
               "DocumentMoniker": "D:\\PUCP\\2024\\CICLO 6\\CURSOS\\PROGRA 3\\TA_PROG3_MrLino\\repo\\IMERA-CS\\ImeraWA\\ImeraWA\\Imera.Master",
               "RelativeDocumentMoniker": "ImeraWA\\Imera.Master",

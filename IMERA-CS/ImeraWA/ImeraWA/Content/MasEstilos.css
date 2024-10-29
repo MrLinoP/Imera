@@ -34,3 +34,10 @@
     position: relative;
     height: 15vh; /* Altura completa de la ventana */
 }
+
+.btn-custom-size {
+    width: 800px;
+    height: 150px;
+    font-size: 30PX;
+    margin-left: 150px;
+}
