@@ -41,3 +41,28 @@
     font-size: 25PX;
     margin-left: 200px;
 }
+.left-half {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+.full-height-img {
+    height: 100vh; /* Establece la altura de la imagen para ocupar el 100% de la altura de la pantalla */
+    width: 100%; /* Establece el ancho de la imagen para ocupar el 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del contenedor */
+}
