@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="Imera.Master.cs">
       <DependentUpon>Imera.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Imera.Master.designer.cs">
       <DependentUpon>Imera.Master</DependentUpon>
