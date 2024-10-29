@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Imera.master.cs" Inherits="ImeraWA.Imera" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Fonts/css/all.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <link href="Content/custom.css" rel="stylesheet" />
+    <link href="Content/MasEstilos.css" rel="stylesheet" />
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+    <script src="Scripts/jquery-3.7.1.js"></script>
+
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+</head>
+<body>
+    <%-- MENU LATERAL --%>
+    <div class="container-fluid d-flex p-0 h-100">
+        <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-primary text-white offcanvas-md offcanvas-start">
+            <a href="Home.aspx" class="navbar-brand d-flex align-items-center">
+                <img src="Images/logo.png" width="100" class="p-3" />
+                <h1 class="mb-0 ms-6" style="font-size: 40px;"><strong>IMERA PUCP</strong></h1>
+            </a>
+            <hr>
+            <ul class="mynav nav nav-pills flex-column mb-auto">
+                <li class="nav-item mb-1">
+                    <a href="#" style="font-size: 23px;"><i class="fa-solid fa-chalkboard-user" style="margin-right: 20px;"></i>Aulas libres</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" style="font-size: 23px;"><i class="fa-solid fa-school-flag" style="margin-right: 20px;"></i>Pabellones</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" style="font-size: 23px;"><i class="fa-solid fa-user-tie" style="margin-right: 20px;"></i>Auxiliares</a>
+                </li>
+                <li class="nav-item mb-1">
+                    <a href="#" style="font-size: 23px;"><i class="fa-solid fa-file-invoice" style="margin-right: 20px;"></i>Reportes</a>
+                </li>
+
+            </ul>
+            <div class="logout-button bg-warning p-2 rounded text-center">
+                <a href="#" class="text-black text-decoration-none " style="width: 330px;">
+                    <i class="fa-solid fa-right-from-bracket"></i>Cerrar Sesión
+                </a>
+            </div>
+        </div>
+
+        <!-- Contenido Derecha -->
+        <div class="bg-light flex-fill overflow-auto">
+            
+            <!-- Contenido de la Página Web -->
+            <div class="p-4">
+                <form runat="server">
+                    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

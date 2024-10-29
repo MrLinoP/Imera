@@ -1,0 +1,68 @@
+﻿.user-box {
+    text-decoration: none;
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el icono y el nombre */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    color: black; /* Color de texto */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+
+.logout-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
+    background-color: #ffd700; /* Color de fondo amarillo */
+    padding: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+}
+
+.main-container {
+    position: relative;
+    height: 15vh; /* Altura completa de la ventana */
+}
+
+.btn-custom-size {
+    width: 450px;
+    height: 120px;
+    font-size: 25PX;
+    margin-left: 200px;
+}
+.left-half {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+.full-height-img {
+    height: 100vh; /* Establece la altura de la imagen para ocupar el 100% de la altura de la pantalla */
+    width: 100%; /* Establece el ancho de la imagen para ocupar el 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del contenedor */
+}
