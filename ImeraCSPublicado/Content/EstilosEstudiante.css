@@ -1,0 +1,10 @@
+﻿.side-image-container {
+    width: 20%;
+    padding: 20px;
+    float: left;
+}
+
+.main-content {
+    width: 75%;
+    float: left;
+}

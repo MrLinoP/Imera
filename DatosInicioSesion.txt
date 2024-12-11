@@ -1,0 +1,11 @@
+Intendente:
+Código:123
+Contraseña:programacion3
+
+Auxiliar:
+Código:20212700
+Contraseña:programacion3
+
+Auxiliar:
+Código:20210865
+Contraseña:programacion3

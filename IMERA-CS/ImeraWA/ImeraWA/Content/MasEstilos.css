@@ -1,0 +1,360 @@
+﻿.user-box {
+    text-decoration: none;
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el icono y el nombre */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    color: black; /* Color de texto */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+
+.logout-button {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical */
+    left: 10px; /* Ajusta la posición horizontal */
+    background-color: #ffd700; /* Color de fondo amarillo */
+    padding: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer;
+}
+
+.main-container {
+    position: relative;
+    height: 15vh; /* Altura completa de la ventana */
+}
+
+.btn-custom-size {
+    width: 450px;
+    height: 120px;
+    font-size: 25PX;
+    margin-left: 200px;
+}
+.left-half {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.right-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+.full-height-img {
+    height: 100vh; /* Establece la altura de la imagen para ocupar el 100% de la altura de la pantalla */
+    width: 100%; /* Establece el ancho de la imagen para ocupar el 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del contenedor */
+}
+
+input.form-control {
+    border-color: #363636; /* Cambiado a negro */
+}
+
+.col-form-label {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-inline .form-check-label {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 5% auto;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+}
+
+.letter-box {
+    background-color: #8ac6f2;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.name-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones de editar y eliminar */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .edit-button i,
+    .delete-button i {
+        font-size: 1.2rem;
+    }
+
+/* Sección de pisos */
+.floors-section h3 {
+    margin-bottom: 1%;
+}
+
+.floors-list {
+    background-color: #76bfe1;
+    padding: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.floor {
+    background-color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.room-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.room {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botones de piso */
+.floor-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-room-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-floor-button {
+    background-color: #f44336;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Botones inferiores */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px;
+    border-radius: 5%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.legend {
+    background-color: #bbb;
+    padding: 1% 2%; /* Usamos porcentajes para espaciado */
+    border-radius: 5%; /* Bordes redondeados en porcentaje */
+    font-size: 90%; /* Tamaño relativo a la fuente base */
+    color: #333;
+    display: flex;
+    gap: 2%; /* Espacio entre elementos */
+    width: 16%; /* Ocupa la mitad del contenedor */
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-info {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .cancel-button, .add-button {
+        width: 100%;
+    }
+}
+
+/* Estilo del botón que abre la ventana */
+.btn-open {
+    padding: 1% 2%;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 2%;
+    margin-left: 63.4%
+}
+
+/* Contenedor de la ventana emergente */
+.modal {
+    display: none; /* Oculta la ventana por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    overflow: auto;
+}
+
+/* Contenido de la ventana emergente */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de cerrar */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close-btn:hover,
+    .close-btn:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+/* Estilo de los formularios dentro de la ventana */
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.modal-content label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+    .btn-submit:hover {
+        background-color: #45a049;
+    }
+
+.inline-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajusta el espacio entre los elementos si es necesario */
+}

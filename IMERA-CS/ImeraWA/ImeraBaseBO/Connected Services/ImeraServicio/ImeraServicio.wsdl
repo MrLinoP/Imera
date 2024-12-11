@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://servicios.imera.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ImeraServicio" targetNamespace="http://servicios.imera.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/ImeraServidor/ImeraServicio?xsd=1" namespace="http://servicios.imera.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="piso_insertarPiso">
+    <part name="parameters" element="tns:piso_insertarPiso" />
+  </message>
+  <message name="piso_insertarPisoResponse">
+    <part name="parameters" element="tns:piso_insertarPisoResponse" />
+  </message>
+  <message name="auxiliar_modificar">
+    <part name="parameters" element="tns:auxiliar_modificar" />
+  </message>
+  <message name="auxiliar_modificarResponse">
+    <part name="parameters" element="tns:auxiliar_modificarResponse" />
+  </message>
+  <message name="horario_modificar">
+    <part name="parameters" element="tns:horario_modificar" />
+  </message>
+  <message name="horario_modificarResponse">
+    <part name="parameters" element="tns:horario_modificarResponse" />
+  </message>
+  <message name="aula_insertarAulas">
+    <part name="parameters" element="tns:aula_insertarAulas" />
+  </message>
+  <message name="aula_insertarAulasResponse">
+    <part name="parameters" element="tns:aula_insertarAulasResponse" />
+  </message>
+  <message name="auxiliar_insertar">
+    <part name="parameters" element="tns:auxiliar_insertar" />
+  </message>
+  <message name="auxiliar_insertarResponse">
+    <part name="parameters" element="tns:auxiliar_insertarResponse" />
+  </message>
+  <message name="horarioIntendente_asignarAulaLibreSemestral">
+    <part name="parameters" element="tns:horarioIntendente_asignarAulaLibreSemestral" />
+  </message>
+  <message name="horarioIntendente_asignarAulaLibreSemestralResponse">
+    <part name="parameters" element="tns:horarioIntendente_asignarAulaLibreSemestralResponse" />
+  </message>
+  <message name="piso_listarNumeroPisos">
+    <part name="parameters" element="tns:piso_listarNumeroPisos" />
+  </message>
+  <message name="piso_listarNumeroPisosResponse">
+    <part name="parameters" element="tns:piso_listarNumeroPisosResponse" />
+  </message>
+  <message name="pabellon_listar_todos">
+    <part name="parameters" element="tns:pabellon_listar_todos" />
+  </message>
+  <message name="pabellon_listar_todosResponse">
+    <part name="parameters" element="tns:pabellon_listar_todosResponse" />
+  </message>
+  <message name="auxiliar_listarTodos">
+    <part name="parameters" element="tns:auxiliar_listarTodos" />
+  </message>
+  <message name="auxiliar_listarTodosResponse">
+    <part name="parameters" element="tns:auxiliar_listarTodosResponse" />
+  </message>
+  <message name="auxiliar_obtenerPorId">
+    <part name="parameters" element="tns:auxiliar_obtenerPorId" />
+  </message>
+  <message name="auxiliar_obtenerPorIdResponse">
+    <part name="parameters" element="tns:auxiliar_obtenerPorIdResponse" />
+  </message>
+  <message name="loginIntendenteAuxiliar">
+    <part name="parameters" element="tns:loginIntendenteAuxiliar" />
+  </message>
+  <message name="loginIntendenteAuxiliarResponse">
+    <part name="parameters" element="tns:loginIntendenteAuxiliarResponse" />
+  </message>
+  <message name="cambioEstado_insertar">
+    <part name="parameters" element="tns:cambioEstado_insertar" />
+  </message>
+  <message name="cambioEstado_insertarResponse">
+    <part name="parameters" element="tns:cambioEstado_insertarResponse" />
+  </message>
+  <message name="pabellon_insertarPabellon">
+    <part name="parameters" element="tns:pabellon_insertarPabellon" />
+  </message>
+  <message name="pabellon_insertarPabellonResponse">
+    <part name="parameters" element="tns:pabellon_insertarPabellonResponse" />
+  </message>
+  <message name="horarioCompletoAlumno_listarTodos">
+    <part name="parameters" element="tns:horarioCompletoAlumno_listarTodos" />
+  </message>
+  <message name="horarioCompletoAlumno_listarTodosResponse">
+    <part name="parameters" element="tns:horarioCompletoAlumno_listarTodosResponse" />
+  </message>
+  <message name="horario_modificarAulasClase">
+    <part name="parameters" element="tns:horario_modificarAulasClase" />
+  </message>
+  <message name="horario_modificarAulasClaseResponse">
+    <part name="parameters" element="tns:horario_modificarAulasClaseResponse" />
+  </message>
+  <message name="horarioAuxiliar_listarTodos">
+    <part name="parameters" element="tns:horarioAuxiliar_listarTodos" />
+  </message>
+  <message name="horarioAuxiliar_listarTodosResponse">
+    <part name="parameters" element="tns:horarioAuxiliar_listarTodosResponse" />
+  </message>
+  <message name="horarioIntendente_eliminarAulaLibreSemestral">
+    <part name="parameters" element="tns:horarioIntendente_eliminarAulaLibreSemestral" />
+  </message>
+  <message name="horarioIntendente_eliminarAulaLibreSemestralResponse">
+    <part name="parameters" element="tns:horarioIntendente_eliminarAulaLibreSemestralResponse" />
+  </message>
+  <message name="aula_listarNombresAulasXPisoYPabellon">
+    <part name="parameters" element="tns:aula_listarNombresAulasXPisoYPabellon" />
+  </message>
+  <message name="aula_listarNombresAulasXPisoYPabellonResponse">
+    <part name="parameters" element="tns:aula_listarNombresAulasXPisoYPabellonResponse" />
+  </message>
+  <message name="horarioCompletoIntendente_listarTodos">
+    <part name="parameters" element="tns:horarioCompletoIntendente_listarTodos" />
+  </message>
+  <message name="horarioCompletoIntendente_listarTodosResponse">
+    <part name="parameters" element="tns:horarioCompletoIntendente_listarTodosResponse" />
+  </message>
+  <message name="horarioIntendente_listar_todosIntendente">
+    <part name="parameters" element="tns:horarioIntendente_listar_todosIntendente" />
+  </message>
+  <message name="horarioIntendente_listar_todosIntendenteResponse">
+    <part name="parameters" element="tns:horarioIntendente_listar_todosIntendenteResponse" />
+  </message>
+  <message name="horarioIntendente_listar_todosSemestrales">
+    <part name="parameters" element="tns:horarioIntendente_listar_todosSemestrales" />
+  </message>
+  <message name="horarioIntendente_listar_todosSemestralesResponse">
+    <part name="parameters" element="tns:horarioIntendente_listar_todosSemestralesResponse" />
+  </message>
+  <message name="reporte_reporteSemanal">
+    <part name="parameters" element="tns:reporte_reporteSemanal" />
+  </message>
+  <message name="reporte_reporteSemanalResponse">
+    <part name="parameters" element="tns:reporte_reporteSemanalResponse" />
+  </message>
+  <message name="reporte_reporteMensual">
+    <part name="parameters" element="tns:reporte_reporteMensual" />
+  </message>
+  <message name="reporte_reporteMensualResponse">
+    <part name="parameters" element="tns:reporte_reporteMensualResponse" />
+  </message>
+  <message name="reporte_distribucionHorasSemanal">
+    <part name="parameters" element="tns:reporte_distribucionHorasSemanal" />
+  </message>
+  <message name="reporte_distribucionHorasSemanalResponse">
+    <part name="parameters" element="tns:reporte_distribucionHorasSemanalResponse" />
+  </message>
+  <portType name="ImeraServicio">
+    <operation name="piso_insertarPiso">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/piso_insertarPisoRequest" message="tns:piso_insertarPiso" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/piso_insertarPisoResponse" message="tns:piso_insertarPisoResponse" />
+    </operation>
+    <operation name="auxiliar_modificar">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_modificarRequest" message="tns:auxiliar_modificar" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_modificarResponse" message="tns:auxiliar_modificarResponse" />
+    </operation>
+    <operation name="horario_modificar">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horario_modificarRequest" message="tns:horario_modificar" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horario_modificarResponse" message="tns:horario_modificarResponse" />
+    </operation>
+    <operation name="aula_insertarAulas">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/aula_insertarAulasRequest" message="tns:aula_insertarAulas" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/aula_insertarAulasResponse" message="tns:aula_insertarAulasResponse" />
+    </operation>
+    <operation name="auxiliar_insertar">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_insertarRequest" message="tns:auxiliar_insertar" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_insertarResponse" message="tns:auxiliar_insertarResponse" />
+    </operation>
+    <operation name="horarioIntendente_asignarAulaLibreSemestral">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_asignarAulaLibreSemestralRequest" message="tns:horarioIntendente_asignarAulaLibreSemestral" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_asignarAulaLibreSemestralResponse" message="tns:horarioIntendente_asignarAulaLibreSemestralResponse" />
+    </operation>
+    <operation name="piso_listarNumeroPisos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/piso_listarNumeroPisosRequest" message="tns:piso_listarNumeroPisos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/piso_listarNumeroPisosResponse" message="tns:piso_listarNumeroPisosResponse" />
+    </operation>
+    <operation name="pabellon_listar_todos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/pabellon_listar_todosRequest" message="tns:pabellon_listar_todos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/pabellon_listar_todosResponse" message="tns:pabellon_listar_todosResponse" />
+    </operation>
+    <operation name="auxiliar_listarTodos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_listarTodosRequest" message="tns:auxiliar_listarTodos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_listarTodosResponse" message="tns:auxiliar_listarTodosResponse" />
+    </operation>
+    <operation name="auxiliar_obtenerPorId">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_obtenerPorIdRequest" message="tns:auxiliar_obtenerPorId" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/auxiliar_obtenerPorIdResponse" message="tns:auxiliar_obtenerPorIdResponse" />
+    </operation>
+    <operation name="loginIntendenteAuxiliar">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/loginIntendenteAuxiliarRequest" message="tns:loginIntendenteAuxiliar" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/loginIntendenteAuxiliarResponse" message="tns:loginIntendenteAuxiliarResponse" />
+    </operation>
+    <operation name="cambioEstado_insertar">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/cambioEstado_insertarRequest" message="tns:cambioEstado_insertar" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/cambioEstado_insertarResponse" message="tns:cambioEstado_insertarResponse" />
+    </operation>
+    <operation name="pabellon_insertarPabellon">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/pabellon_insertarPabellonRequest" message="tns:pabellon_insertarPabellon" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/pabellon_insertarPabellonResponse" message="tns:pabellon_insertarPabellonResponse" />
+    </operation>
+    <operation name="horarioCompletoAlumno_listarTodos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioCompletoAlumno_listarTodosRequest" message="tns:horarioCompletoAlumno_listarTodos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioCompletoAlumno_listarTodosResponse" message="tns:horarioCompletoAlumno_listarTodosResponse" />
+    </operation>
+    <operation name="horario_modificarAulasClase">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horario_modificarAulasClaseRequest" message="tns:horario_modificarAulasClase" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horario_modificarAulasClaseResponse" message="tns:horario_modificarAulasClaseResponse" />
+    </operation>
+    <operation name="horarioAuxiliar_listarTodos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioAuxiliar_listarTodosRequest" message="tns:horarioAuxiliar_listarTodos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioAuxiliar_listarTodosResponse" message="tns:horarioAuxiliar_listarTodosResponse" />
+    </operation>
+    <operation name="horarioIntendente_eliminarAulaLibreSemestral">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_eliminarAulaLibreSemestralRequest" message="tns:horarioIntendente_eliminarAulaLibreSemestral" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_eliminarAulaLibreSemestralResponse" message="tns:horarioIntendente_eliminarAulaLibreSemestralResponse" />
+    </operation>
+    <operation name="aula_listarNombresAulasXPisoYPabellon">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/aula_listarNombresAulasXPisoYPabellonRequest" message="tns:aula_listarNombresAulasXPisoYPabellon" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/aula_listarNombresAulasXPisoYPabellonResponse" message="tns:aula_listarNombresAulasXPisoYPabellonResponse" />
+    </operation>
+    <operation name="horarioCompletoIntendente_listarTodos">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioCompletoIntendente_listarTodosRequest" message="tns:horarioCompletoIntendente_listarTodos" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioCompletoIntendente_listarTodosResponse" message="tns:horarioCompletoIntendente_listarTodosResponse" />
+    </operation>
+    <operation name="horarioIntendente_listar_todosIntendente">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_listar_todosIntendenteRequest" message="tns:horarioIntendente_listar_todosIntendente" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_listar_todosIntendenteResponse" message="tns:horarioIntendente_listar_todosIntendenteResponse" />
+    </operation>
+    <operation name="horarioIntendente_listar_todosSemestrales">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_listar_todosSemestralesRequest" message="tns:horarioIntendente_listar_todosSemestrales" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/horarioIntendente_listar_todosSemestralesResponse" message="tns:horarioIntendente_listar_todosSemestralesResponse" />
+    </operation>
+    <operation name="reporte_reporteSemanal">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_reporteSemanalRequest" message="tns:reporte_reporteSemanal" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_reporteSemanalResponse" message="tns:reporte_reporteSemanalResponse" />
+    </operation>
+    <operation name="reporte_reporteMensual">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_reporteMensualRequest" message="tns:reporte_reporteMensual" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_reporteMensualResponse" message="tns:reporte_reporteMensualResponse" />
+    </operation>
+    <operation name="reporte_distribucionHorasSemanal">
+      <input wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_distribucionHorasSemanalRequest" message="tns:reporte_distribucionHorasSemanal" />
+      <output wsam:Action="http://servicios.imera.pucp.edu.pe/ImeraServicio/reporte_distribucionHorasSemanalResponse" message="tns:reporte_distribucionHorasSemanalResponse" />
+    </operation>
+  </portType>
+  <binding name="ImeraServicioPortBinding" type="tns:ImeraServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="piso_insertarPiso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="auxiliar_modificar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horario_modificar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="aula_insertarAulas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="auxiliar_insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioIntendente_asignarAulaLibreSemestral">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="piso_listarNumeroPisos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pabellon_listar_todos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="auxiliar_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="auxiliar_obtenerPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="loginIntendenteAuxiliar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cambioEstado_insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pabellon_insertarPabellon">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioCompletoAlumno_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horario_modificarAulasClase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioAuxiliar_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioIntendente_eliminarAulaLibreSemestral">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="aula_listarNombresAulasXPisoYPabellon">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioCompletoIntendente_listarTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioIntendente_listar_todosIntendente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="horarioIntendente_listar_todosSemestrales">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporte_reporteSemanal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporte_reporteMensual">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="reporte_distribucionHorasSemanal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ImeraServicio">
+    <port name="ImeraServicioPort" binding="tns:ImeraServicioPortBinding">
+      <soap:address location="http://localhost:8080/ImeraServidor/ImeraServicio" />
+    </port>
+  </service>
+</definitions>

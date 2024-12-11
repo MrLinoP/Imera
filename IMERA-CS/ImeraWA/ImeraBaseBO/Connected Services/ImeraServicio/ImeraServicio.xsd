@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicios.imera.pucp.edu.pe/" targetNamespace="http://servicios.imera.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aula_insertarAulas" type="tns:aula_insertarAulas" />
+  <xs:element name="aula_insertarAulasResponse" type="tns:aula_insertarAulasResponse" />
+  <xs:element name="aula_listarNombresAulasXPisoYPabellon" type="tns:aula_listarNombresAulasXPisoYPabellon" />
+  <xs:element name="aula_listarNombresAulasXPisoYPabellonResponse" type="tns:aula_listarNombresAulasXPisoYPabellonResponse" />
+  <xs:element name="auxiliar_insertar" type="tns:auxiliar_insertar" />
+  <xs:element name="auxiliar_insertarResponse" type="tns:auxiliar_insertarResponse" />
+  <xs:element name="auxiliar_listarTodos" type="tns:auxiliar_listarTodos" />
+  <xs:element name="auxiliar_listarTodosResponse" type="tns:auxiliar_listarTodosResponse" />
+  <xs:element name="auxiliar_modificar" type="tns:auxiliar_modificar" />
+  <xs:element name="auxiliar_modificarResponse" type="tns:auxiliar_modificarResponse" />
+  <xs:element name="auxiliar_obtenerPorId" type="tns:auxiliar_obtenerPorId" />
+  <xs:element name="auxiliar_obtenerPorIdResponse" type="tns:auxiliar_obtenerPorIdResponse" />
+  <xs:element name="cambioEstado_insertar" type="tns:cambioEstado_insertar" />
+  <xs:element name="cambioEstado_insertarResponse" type="tns:cambioEstado_insertarResponse" />
+  <xs:element name="horarioAuxiliar_listarTodos" type="tns:horarioAuxiliar_listarTodos" />
+  <xs:element name="horarioAuxiliar_listarTodosResponse" type="tns:horarioAuxiliar_listarTodosResponse" />
+  <xs:element name="horarioCompletoAlumno_listarTodos" type="tns:horarioCompletoAlumno_listarTodos" />
+  <xs:element name="horarioCompletoAlumno_listarTodosResponse" type="tns:horarioCompletoAlumno_listarTodosResponse" />
+  <xs:element name="horarioCompletoIntendente_listarTodos" type="tns:horarioCompletoIntendente_listarTodos" />
+  <xs:element name="horarioCompletoIntendente_listarTodosResponse" type="tns:horarioCompletoIntendente_listarTodosResponse" />
+  <xs:element name="horarioIntendente_asignarAulaLibreSemestral" type="tns:horarioIntendente_asignarAulaLibreSemestral" />
+  <xs:element name="horarioIntendente_asignarAulaLibreSemestralResponse" type="tns:horarioIntendente_asignarAulaLibreSemestralResponse" />
+  <xs:element name="horarioIntendente_eliminarAulaLibreSemestral" type="tns:horarioIntendente_eliminarAulaLibreSemestral" />
+  <xs:element name="horarioIntendente_eliminarAulaLibreSemestralResponse" type="tns:horarioIntendente_eliminarAulaLibreSemestralResponse" />
+  <xs:element name="horarioIntendente_listar_todosIntendente" type="tns:horarioIntendente_listar_todosIntendente" />
+  <xs:element name="horarioIntendente_listar_todosIntendenteResponse" type="tns:horarioIntendente_listar_todosIntendenteResponse" />
+  <xs:element name="horarioIntendente_listar_todosSemestrales" type="tns:horarioIntendente_listar_todosSemestrales" />
+  <xs:element name="horarioIntendente_listar_todosSemestralesResponse" type="tns:horarioIntendente_listar_todosSemestralesResponse" />
+  <xs:element name="horario_modificar" type="tns:horario_modificar" />
+  <xs:element name="horario_modificarAulasClase" type="tns:horario_modificarAulasClase" />
+  <xs:element name="horario_modificarAulasClaseResponse" type="tns:horario_modificarAulasClaseResponse" />
+  <xs:element name="horario_modificarResponse" type="tns:horario_modificarResponse" />
+  <xs:element name="loginIntendenteAuxiliar" type="tns:loginIntendenteAuxiliar" />
+  <xs:element name="loginIntendenteAuxiliarResponse" type="tns:loginIntendenteAuxiliarResponse" />
+  <xs:element name="pabellon_insertarPabellon" type="tns:pabellon_insertarPabellon" />
+  <xs:element name="pabellon_insertarPabellonResponse" type="tns:pabellon_insertarPabellonResponse" />
+  <xs:element name="pabellon_listar_todos" type="tns:pabellon_listar_todos" />
+  <xs:element name="pabellon_listar_todosResponse" type="tns:pabellon_listar_todosResponse" />
+  <xs:element name="piso_insertarPiso" type="tns:piso_insertarPiso" />
+  <xs:element name="piso_insertarPisoResponse" type="tns:piso_insertarPisoResponse" />
+  <xs:element name="piso_listarNumeroPisos" type="tns:piso_listarNumeroPisos" />
+  <xs:element name="piso_listarNumeroPisosResponse" type="tns:piso_listarNumeroPisosResponse" />
+  <xs:element name="reporte_distribucionHorasSemanal" type="tns:reporte_distribucionHorasSemanal" />
+  <xs:element name="reporte_distribucionHorasSemanalResponse" type="tns:reporte_distribucionHorasSemanalResponse" />
+  <xs:element name="reporte_reporteMensual" type="tns:reporte_reporteMensual" />
+  <xs:element name="reporte_reporteMensualResponse" type="tns:reporte_reporteMensualResponse" />
+  <xs:element name="reporte_reporteSemanal" type="tns:reporte_reporteSemanal" />
+  <xs:element name="reporte_reporteSemanalResponse" type="tns:reporte_reporteSemanalResponse" />
+  <xs:complexType name="horarioIntendente_eliminarAulaLibreSemestral">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aula" type="xs:string" />
+      <xs:element minOccurs="0" name="horario" type="xs:string" />
+      <xs:element minOccurs="0" name="dia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_eliminarAulaLibreSemestralResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_modificar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idAuxiliar" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoPucp" type="xs:int" />
+      <xs:element minOccurs="0" name="correoPucp" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoP" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoM" type="xs:string" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="turno" type="tns:turno" />
+      <xs:element minOccurs="0" name="activo" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="contrasenha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_modificarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambioEstado_insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" name="idAula" type="xs:int" />
+      <xs:element minOccurs="0" name="idHora" type="xs:int" />
+      <xs:element minOccurs="0" name="estadoInicial" type="tns:estadoAula" />
+      <xs:element minOccurs="0" name="estadoFinal" type="tns:estadoAula" />
+      <xs:element minOccurs="0" name="idAuxiliar" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambioEstado_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_listar_todosSemestrales">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_listar_todosSemestralesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horarioIntendente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="diaSemana" type="tns:diaSemana" />
+      <xs:element minOccurs="0" name="horario" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreAula" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula_insertarAulas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idAulas" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idPisos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idPabellones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aforos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enchufes" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula_insertarAulasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pabellon_listar_todos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="pabellon_listar_todosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pabellon" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pabellon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroPisos" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="pisos" nillable="true" type="tns:piso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="piso">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aulas" nillable="true" type="tns:aula" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroAulas" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aforo" type="xs:int" />
+      <xs:element minOccurs="0" name="idAula" type="xs:int" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroEnchufes" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_obtenerPorId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idAuxiliar" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_obtenerPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:auxiliar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:persona">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="contrasenha" type="xs:string" />
+          <xs:element minOccurs="0" name="idAuxiliar" type="xs:int" />
+          <xs:element minOccurs="0" name="turno" type="tns:turno" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="persona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="apellidoM" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoP" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoPucp" type="xs:int" />
+      <xs:element minOccurs="0" name="correoPucp" type="xs:string" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="rol" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioCompletoAlumno_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="horarioCompletoAlumno_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horarioCompleto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioCompleto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aforo" type="xs:int" />
+      <xs:element minOccurs="0" name="cantEnchufes" type="xs:int" />
+      <xs:element minOccurs="0" name="horaFin" type="xs:int" />
+      <xs:element minOccurs="0" name="horaIni" type="xs:int" />
+      <xs:element minOccurs="0" name="idAula" type="xs:int" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_asignarAulaLibreSemestral">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aulas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="horarios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="dias" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_asignarAulaLibreSemestralResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoPucp" type="xs:int" />
+      <xs:element minOccurs="0" name="correoPucp" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoP" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoM" type="xs:string" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="turno" type="tns:turno" />
+      <xs:element minOccurs="0" name="activo" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="contrasenha" type="xs:string" />
+      <xs:element minOccurs="0" name="rol" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_insertarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporte_reporteMensual">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="reporte_reporteMensualResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteMensual" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteMensual">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="horasAsignadasAulaLibre" type="xs:int" />
+      <xs:element minOccurs="0" name="horasCambiadasADisponible" type="xs:int" />
+      <xs:element minOccurs="0" name="horasDeLibreAReservada" type="xs:int" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="ratioAR" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horario_modificar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" name="idAula" type="xs:int" />
+      <xs:element minOccurs="0" name="idHora" type="xs:int" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoAula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horario_modificarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auxiliar_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="auxiliar_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:auxiliar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporte_reporteSemanal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporte_reporteSemanalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteSemanal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteSemanal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoAuxiliar" type="xs:int" />
+      <xs:element minOccurs="0" name="horasAsignadas" type="xs:int" />
+      <xs:element minOccurs="0" name="horasDesasignadas" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="piso_insertarPiso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aulas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aforos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enchufes" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="piso_insertarPisoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horario_modificarAulasClase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="horarios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idPisos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idAulas" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="idHoras" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="fechas" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horario_modificarAulasClaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_listar_todosIntendente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioIntendente_listar_todosIntendenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horarioIntendente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula_listarNombresAulasXPisoYPabellon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aula_listarNombresAulasXPisoYPabellonResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pabellon_insertarPabellon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="cantPisos" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aulas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="aforos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="enchufes" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pabellon_insertarPabellonResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioCompletoIntendente_listarTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="horarioCompletoIntendente_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horarioCompleto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="piso_listarNumeroPisos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="piso_listarNumeroPisosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginIntendenteAuxiliar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DatosInicioSesion" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasenha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginIntendenteAuxiliarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:persona" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporte_distribucionHorasSemanal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporte_distribucionHorasSemanalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioAuxiliar_listarTodos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPabellon" type="xs:string" />
+      <xs:element minOccurs="0" name="idPiso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioAuxiliar_listarTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:horarioAuxiliar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="horarioAuxiliar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="tns:estadoAula" />
+      <xs:element minOccurs="0" name="horario" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreAula" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="turno">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MAÑANA" />
+      <xs:enumeration value="TARDE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoAula">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DISPONIBLE" />
+      <xs:enumeration value="AULA_LIBRE" />
+      <xs:enumeration value="AULA_LIBRE_SEMESTRAL" />
+      <xs:enumeration value="AULA_RESERVADA" />
+      <xs:enumeration value="AULA_CLASE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="diaSemana">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LUNES" />
+      <xs:enumeration value="MARTES" />
+      <xs:enumeration value="MIERCOLES" />
+      <xs:enumeration value="JUEVES" />
+      <xs:enumeration value="VIERNES" />
+      <xs:enumeration value="SABADO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="rol">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AUXILIAR" />
+      <xs:enumeration value="INTENDENTE" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

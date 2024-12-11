@@ -1,0 +1,61 @@
+﻿.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.btn-paint {
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius:1px;
+    border-color:black;
+}
+
+.cursor-yellow {
+    cursor: url('Images/bucket-yellow.png'), auto;
+}
+
+.cursor-white {
+    cursor: url('Images/bucket-white.png'), auto;
+}
+
+.cursor-blue {
+    cursor: url('Images/bucket-blue.png'), auto;
+}
+
+.title-imera {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: #427cff;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand h2 {
+    margin-left: 10px;
+}
+
+.navbar-text {
+    margin-left: 20px;
+}
+
+.ml-auto {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    margin-left: 20px;
+}
+.cursor-yellow button,
+.cursor-white button,
+.cursor-blue button {
+    cursor: inherit; /* Hereda el cursor definido en el contenedor */
+}
